@@ -14,7 +14,7 @@
   <tr>
     <td><%= post.titulo %></td>
     <td><%= post.corpo %></td>
-    <td><%= post.usuario_id %></td>
+    <td><%= post.usuario.nome %></td>
     <td><%= link_to 'Show', post %></td>
     <td><%= link_to 'Edit', edit_post_path(post) %></td>
     <td><%= link_to 'Destroy', post, confirm: 'Are you sure?', method: :delete %></td>
