@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :usuario_id %><br />
-    <%= f.number_field :usuario_id %>
+    <%= f.select :usuario_id, @usuarios.collect {|u| [ u.nome, u.id ] } %>
   </div>
   <div class="actions">
     <%= f.submit %>
