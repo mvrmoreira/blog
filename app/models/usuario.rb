@@ -1,6 +1,6 @@
 class Usuario < ActiveRecord::Base
   
-  has_many :posts
+  has_many :posts, dependent: :restrict
   
   validates :nome, :presence => true
   validates :email, :uniqueness => true
